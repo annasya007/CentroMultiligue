@@ -1,0 +1,90 @@
+header {
+  margin-top: 0;
+}
+nav {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: calc(100% - 20px);
+  text-align: right;
+  padding-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+a {
+  margin-right: 15px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+a:hover {
+  color: #ef7781;
+}
+.app-wrapper {
+  background: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #020f75 100%
+  );
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.burger-button {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.navbar {
+  border-radius: 5px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.navbar .burger-button {
+  width: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.navbar .burger-button .line {
+  height: 2px;
+  background-color: white;
+  margin-bottom: 3px;
+  border-radius: 1px;
+}
+.main-image img {
+  max-width: 1000px;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-menu img {
+  width: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.icon-menu ul {
+  text-align: center;
+  list-style: none;
+}
+.icon-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
