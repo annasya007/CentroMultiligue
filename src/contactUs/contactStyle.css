@@ -5,6 +5,8 @@ header {
     rgb(14, 72, 222) 5.2%,
     rgb(3, 22, 65) 75.3%
   );
+  position: fixed;
+  width: 100%;
 }
 nav {
   display: inline-block;
@@ -80,6 +82,7 @@ form button:hover {
   border-radius: 5px;
   height: 70px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .navbar .burger-button {
   width: 20px;
@@ -110,7 +113,7 @@ form button:hover {
   transition: 0.5s ease-in-out;
   color: black;
 }
-.contact button {
+.contact .button {
   font-family: "Quicksand", sans-serif;
   border-radius: 12px;
   background-color: white;
@@ -119,7 +122,7 @@ form button:hover {
   padding: 15px 32px;
   transition: 0.1s ease-in-out;
 }
-.contact button:hover {
+.contact .button:hover {
   border: 2px solid #0e42ca;
 }
 .image {
@@ -127,7 +130,7 @@ form button:hover {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 95px;
 }
 .icon-menu img {
   width: 20px;
