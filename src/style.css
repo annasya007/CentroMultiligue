@@ -186,6 +186,13 @@ footer {
   border: 1px black solid;
   padding: 10px 10px;
 }
+.contact-container {
+  margin: 100px auto 100px auto;
+  width: 980px;
+  width: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
 .address {
   width: 44%;
   display: inline-block;
@@ -218,10 +225,48 @@ footer {
   margin: 0 auto;
   width: 50%;
 }
-.contact-container {
-  margin: 100px auto 100px auto;
-  width: 980px;
-  width: 100%;
-  vertical-align: top;
-  box-sizing: border-box;
+
+@media only screen and (max-width: 980px) {
+  body {
+    margin: 0;
+  }
+  header {
+    width: auto;
+  }
+  .contact-menu {
+    width: auto;
+  }
+  .site-navigation {
+    display: none;
+  }
+  .page-banner {
+    width: auto;
+  }
+  .page-title {
+    width: auto;
+  }
+  .image {
+    width: 100%;
+  }
+  .description {
+    width: auto;
+  }
+  .service-container {
+    width: auto;
+  }
+  .row .box {
+    width: auto;
+  }
+  .gallery-container {
+    width: auto;
+  }
+  .box-foto {
+    width: auto;
+  }
+  .address {
+    width: auto;
+  }
+  .contact-container {
+    width: auto;
+  }
 }
