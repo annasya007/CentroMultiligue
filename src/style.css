@@ -10,25 +10,6 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-nav {
-  border-bottom: 1px black solid;
-  display: block;
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 30px;
-}
-nav ul {
-  list-style: none;
-  margin: 0 auto;
-}
-nav li {
-  list-style: none;
-  padding-right: 10px;
-  padding-left: 10px;
-  display: inline-block;
-}
 a {
   margin-right: 15px;
   color: black;
@@ -37,10 +18,6 @@ a {
 }
 a:hover {
   color: #ef7781;
-}
-.main-description p {
-  font-size: 18px;
-  line-height: 1.4;
 }
 h3 {
   text-align: center;
@@ -82,7 +59,7 @@ form button:hover {
 footer {
   background-color: #f39645;
 }
-.contact-menu {
+.contact-menu nav {
   background-color: #f39645;
   display: block;
   font-size: 16px;
@@ -110,14 +87,33 @@ footer {
 .contact-menu a:hover {
   color: darkblue;
 }
-.main-container {
+.site-navigation nav {
+  border-bottom: 1px black solid;
+  display: block;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+.site-navigation nav ul {
+  list-style: none;
+  margin: 0 auto;
+}
+.site-navigation nav li {
+  list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: inline-block;
+}
+.page-banner {
   margin: 100px auto 100px auto;
   width: 980px;
   width: 100%;
   vertical-align: top;
   box-sizing: border-box;
 }
-.main-text {
+.page-title {
   width: 45%;
   background-color: #f39645;
   display: inline-block;
@@ -125,7 +121,7 @@ footer {
   margin-left: 30px;
   box-sizing: border-box;
 }
-.main-text .text {
+.page-title .subject {
   font-weight: lighter;
   text-align: center;
   margin: 150px 30px 0 30px;
@@ -137,22 +133,22 @@ footer {
   vertical-align: top;
   padding-left: 90px;
 }
-.main-description {
+.description {
   width: 980px;
   width: 90%;
   margin: 90px auto 90px auto;
   box-sizing: border-box;
   text-align: center;
 }
-.main-description h1 {
+.description h1 {
   font-size: 35px;
   font-weight: bold;
 }
-.main-description p {
+.description p {
   font-size: 20px;
   line-height: 1.8;
 }
-.main-services {
+.service-container {
   background-image: url("services-background.jpg");
   width: 980px;
   width: 100%;
@@ -174,7 +170,7 @@ footer {
   font-size: 20px;
   text-align: center;
 }
-.foto-gallery {
+.gallery-container {
   margin: 100px auto 100px auto;
   width: 980px;
   width: 100%;
@@ -190,34 +186,21 @@ footer {
   border: 1px black solid;
   padding: 10px 10px;
 }
-.additional-info {
-  box-sizing: border-box;
-  width: 80%;
-  margin: 60px auto 10px auto;
-}
-.additional-info p {
-  font-size: 20px;
-  text-align: center;
-}
-.main-body {
-  vertical-align: top;
-  margin-bottom: 90px;
-}
-.contact {
+.address {
   width: 44%;
   display: inline-block;
   box-sizing: border-box;
   margin: 0 auto;
 }
-.contact p {
+.address p {
   text-align: center;
 }
-.contact a {
+.address a {
   text-decoration: none;
   transition: 0.5s ease-in-out;
   color: black;
 }
-.contact .button {
+.address .button {
   font-family: "Quicksand", sans-serif;
   border-radius: 12px;
   background-color: white;
@@ -226,7 +209,7 @@ footer {
   padding: 15px 32px;
   transition: 0.1s ease-in-out;
 }
-.contact .button:hover {
+.address .button:hover {
   border: 2px solid #0e42ca;
 }
 .contact-form {
