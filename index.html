@@ -15,51 +15,40 @@
   </head>
   <body>
     <header>
-      <div class="contact-menu">
+      <div class="top-menu-container">
+        <div class="burger-button" id="burger-button">
+          <div class="line1" id="line1"></div>
+          <div class="line2" id="line2"></div>
+          <div class="line3" id="line3"></div>
+        </div>
         <nav>
-          <ul>
-            <li>
-              <a href="">🏠 Via dei Cappuccini, 28 (BZ)</a>
-            </li>
-            <li>
-              <a href="">📞 0471 300 789</a>
-            </li>
-            <li>
-              <a href="">👩🏼‍💻centromultiligue@provincia.bz.it</a>
-            </li>
-          </ul>
+          <div class="site-navigation-menu" id="site-navigation-menu">
+            <ul>
+              <li>About us</li>
+              <li>Our Services</li>
+              <li>Our Events</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
         </nav>
-      </div>
-      <div class="site-navigation">
         <nav>
-          <ul>
-            <li>
-              <a href="aboutUs.html">ABOUT US</a>
-            </li>
-            <li>
-              <a href="services.html">OUR SERVICES</a>
-            </li>
-            <li>
-              <a href="projects.html">OUR EVENTS</a>
-            </li>
-            <li>
-              <a href="contactUs.html">CONTACT US</a>
-            </li>
-          </ul>
+          <div class="contact-menu">
+            <ul>
+              <li>
+                <a href="">🏠 Via dei Cappuccini, 28 (BZ)</a>
+              </li>
+              <li>
+                <a href="">📞 0471 300 789</a>
+              </li>
+              <li>
+                <a href="">👩🏼‍💻centromultiligue@provincia.bz.it</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
     <section>
-      <div class="page-banner">
-        <div class="page-title">
-          <div class="subject">
-            <h2>"The limits of your language are the limits of your world"</h2>
-          </div>
-        </div>
-        <div class="image">
-          <img src="src/language-study.jpg" width="100%" />
-        </div>
-      </div>
       <div class="description">
         <h1>Centro Multilingue</h1>
         <p>
@@ -171,7 +160,27 @@
             </form>
           </div>
         </div>
-      </div>
     </footer>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("site-navigation-menu");
+        menu.classList.toggle("visible");
+      }
+
+      function toggleX() {
+        const line1 = document.getElementById("line1");
+        const line2 = document.getElementById("line2");
+        const line3 = document.getElementById("line3");
+        line1.classList.toggle("change");
+        line2.classList.toggle("change");
+        line3.classList.toggle("change");
+        document.getElementsByTagName("body")[0].style.opacity = "0.5";
+      }
+
+      let burgerButton = document.getElementById("burger-button");
+      burgerButton.addEventListener("click", toggleMenu);
+      burgerButton.addEventListener("click", toggleX);
+    </script>
   </body>
 </html>
