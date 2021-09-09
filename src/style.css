@@ -67,6 +67,10 @@ footer {
   margin-top: 10px;
   padding-top: 20px;
 }
+.contact-menu {
+  padding-bottom: 15px;
+  border-bottom: 1px black solid;
+}
 .contact-menu ul {
   list-style: none;
   margin: 0;
@@ -255,7 +259,6 @@ footer {
     background-color: #333333;
     box-sizing: border-box;
     border-radius: 2px;
-    opacity: 1;
   }
 
   .description {
